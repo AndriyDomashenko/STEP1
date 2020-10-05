@@ -1,7 +1,21 @@
     "use strick";
 
-   const category = 'toys';
+   const numberOfFilms = +prompt('Сколько фильмов вы уже просмотрели?','');
 
-   console.log(`https://someurl.com/${category}/5`);
-   const user = "Ivan";
-   alert(`Привет,${user}`);
+const personalmovieDB ={
+    count:numberOfFilms,
+    movies:{},
+    actors:{},
+    genres:[],
+    privat: false
+
+};
+
+const a = prompt('Один из последних просмотреных фильмов?',''),
+      b = prompt('На сколько  оцените его?',''),
+      c = prompt('Один из последних просмотреных фильмов?',''),
+      d = prompt('На сколько  оцените его?','');           
+     
+      personalmovieDB.movies[a] = b;
+      personalmovieDB.movies[c] = d;
+      console.log(personalmovieDB);
